@@ -1,19 +1,22 @@
 const express=require('express');
 const app=express();
 const mongoose=require("mongoose");
-const { MONGOURI } = require('./config/keys');
+require("dotenv").config();
+
+
 const PORT=process.env.PORT || 5000;
 
 
 
-mongoose.connect(MONGOURI,{ useNewUrlParser: true,useUnifiedTopology:true })
-mongoose.connection.on("connected",()=>{
-    console.log("successfully connected")
+mongoose.connect(process.env.MONGOURI,{
+    useNewUrlParser:true,
+    useCreateIndex:true,
+    useUnifiedTopology:true
+}).then(()=>{
+    console.log("db connected")
+}).catch(err=>{
+    console.log("db disconnected")
 })
-mongoose.connection.on("error",()=>{
-    console.log("disconnected")
-})
-
 
 
 
@@ -31,13 +34,13 @@ app.use(require("./routes/user"));
 
 //TW5JYSuxfNwz2XTc
 
-if(process.env.NODE_ENV=="production"){
+
     app.use(express.static("client/build"))
     const path=require("path")
     app.get("*",(req,res)=>{
         res.sendFile(path.resolve(__dirname,"client","build","index.html"))
     })
-}
+
 
 
 app.listen(PORT,()=>{
