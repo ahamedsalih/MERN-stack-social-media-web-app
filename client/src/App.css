@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+
+
+.brand-logo,h2{
+  font-family: 'Grand Hotel', cursive;
+  
+}
+
+h2{
+  color:rgb(253, 0, 105) !important;
+}
+
+
+
+h4{
+  font-family: 'Caveat';
+}
+
+
+.div{
+position: fixed;
+ margin-left: 50px;
+}
+.filepic{
+  background-color: linear-gradient(90deg,#FFAFBD,#ffc3a0);
+}
+
+
+
+input:focus{
+  border: none;
+  border-bottom: 1px solid pink;
+}
+
+.mainn :hover{
+  
+  
+  
+  
+  border-bottom: 1px solid black;
+}
+
+
+.card{
+  max-width: 600px;
+  height: 600px;
+  padding: 20px;
+  height: 300px;
+  background: linear-gradient(90deg,#FFAFBD,#ffc3a0);
+
+  margin:30px auto;
+  margin-top:10px;
+  
+}
+
+
+.card input[type=text]:focus {
+  border-bottom: 1px solid  #00ffc5 !important;
+  box-shadow: 0 1px 0 0  #00ffc5 !important;
+}
+.card input[type=password]:focus {
+  border-bottom: 1px solid  #00ffc5 !important;
+  box-shadow: 0 1px 0 0  #00ffc5!important;
+}
+.card input[type=email]:focus {
+  border-bottom: 1px solid  #00ffc5 !important;
+  box-shadow: 0 1px 0 0  #00ffc5!important;
+}
+
+
+
+.btn{
+  margin-left:230px;
+  margin-top: 10px;
+  
+}
+
+#bttn{
+  background: linear-gradient(90deg,#FFAFBD,#ffc3a0);
+}
+.button{
+  margin-left:5px;
+  background: linear-gradient(90deg,#FFAFBD,#ffc3a0);
+}
+
+.div2{
+margin-left: 190px;
+margin-top: 20px;
+}
+.div3{
+align-items: center;
+justify-content: center;
+}
+
+.hed{
+margin-left: 170px;
+
+}
+#picv{
+  background: linear-gradient(90deg,#FFAFBD,#ffc3a0)
+}
+
+ input::placeholder{
+  color:rgb(41, 35, 35);
+}
+
+
+
+
+
+
+a{
+  color:black !important;
+}
+
+.right li a:hover{
+  background:linear-gradient(90deg,#fd746c
+  ,#ff9068);
+  color: white;
+  
+}
+
+
+
+.nav-wrapper{
+  background: linear-gradient(90deg,#FFAFBD,#ffc3a0)
+}
+
+.profilediv{
+  display: flex;
+  
+  border-bottom: 1px solid black;
+ 
+  
+}
+
+.pic{
+  padding: 10px;
+  height: 150px;
+  width: 150px;
+  
+}
+
+
+
+
+
+.home-card{
+  width: 500px;
+  height: 700px;
+  margin:30px auto;
+
+
+}
+
+#toast-container{
+  top:80px !important;
+  right:370px !important;
+  left:auto !important;
+}
+
